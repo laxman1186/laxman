@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 34px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 20%;
+  left: 58%;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked+.slider {
+  background-color: #2196F3;
+}
+
+input:focus+.slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+  transform: translateX(26px);
+}
+.form-input-wide {
+     max-width: none !important; 
+     display: inline-block; 
+     width: 100%; 
+}
+.form-header-group, .form-header-group + .form-header-group {
+    border-top: 0;
+}
+
+.form-header-group {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.form-header-group {
+    background-color: #e55e47;
+}
+
+.form-input-wide {
+    max-width: none !important;
+    display: inline-block;
+    width: 100%;
+}
+
+.form-buttons-wrapper {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.form-all .form-buttons-wrapper {
+    margin-left: 0 !important;
+}
+
+.form-all .qq-upload-button, .form-all .form-submit-button, .form-all .form-submit-reset, .form-all .form-submit-print {
+    color: #ffffff !important;
+    background: #06b46c;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.form-all .qq-upload-button, .form-all .form-submit-button, .form-all .form-submit-reset, .form-all .form-submit-print {
+    font-size: 1.15em;
+    padding: 12px 18px;
+    display: block;
+    width: 100%;
+    margin: 0;
+    font-family: "Didact Gothic", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    border: none;
+    border-width: 0px !important;
+    border-style: solid !important;
+    border-color: #3498db !important;
+}
+.form-all {
+    max-width: 550px;
+    width: 100%;
+}
+.form-all {
+    font-family: Didact Gothic, sans-serif;
+}
+.form-all {
+    position: relative;
+}
+.form-all {
+    margin: 0px auto;
+    padding-top: 0px;
+    width: 550px;
+    color: #555 !important;
+    font-family: 'Didact Gothic';
+    font-size: 18px;
+}
+.form-all {
+    border: none !important;
+    box-shadow: none !important;
+}
+.form-all {
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+    background-repeat: repeat;
+}
+
+.form-line {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+}
+.form-label.form-label-auto {
+    display: inline-block;
+    float: left;
+    text-align: left;
+}
+.form-input {
+    width: 62% !important;
+    max-width: none !important;
+}
+.form-textbox, .form-textarea, .form-autocomplete, .form-dropdown {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #e5e5e5;
+    font-size: .9em;
+    border-radius: 3px !important;
+    transition: all .5s ease-in-out;
+    padding: 10px 6px;
+}
+</style>
+</head>
+<body>
+<form class="form-horizontal">
+
+<div class="form-all"> 
+<div id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-default">
+          <div class="header-text httal htvam">
+            <h2 id="header_1" class="form-header" data-component="header">Automation Test Runner</h2>
+          </div>
+        </div>
+      </div>
+
+<!-- Select Basic -->
+<div class="form-group">
+  <div class="form-line" style="margin-top: 5%;">
+  <label class="switch" style="float:right">
+  <input type="checkbox" checked>
+  <span class="slider round">Run on Local</span>
+</label>
+</div>
+<br/>
+<br/>
+
+  <div class="form-line" data-type="control_dropdown" id="id_8" style="margin-top: 5%;">
+  
+        <div id="cid_8" class="form-input" style="
+    display: inline-flex;
+"> 
+		<label class="form-label form-label-left form-label-auto" id="label_8" for="input_8"> Select Automation Test Suite </label>
+		<select class="form-dropdown" id="input_8" name="q8_selectAutomation" style="width:150px" data-component="dropdown" aria-label="Select Automation Test Suite">
+            <option value="">Please Select</option>
+            <option value="Account Activity" selected="selected">Account Activity</option>
+            <option value="Checks">Checks</option>
+            <option value="Deposits">Deposits</option>
+            <option value="Deposit Checks">Deposit Checks</option>
+            <option value="ACH">ACH</option>
+          </select> </div>
+      </div>
+</div>
+
+<div id="cid_2" class="form-input-wide" style="margin-top: 5%;">
+ <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+ <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="" fdprocessedid="i9hi3e">Submit</button></div>
+        </div>
+</div>
+
+</form>
+</body>
+</html>
